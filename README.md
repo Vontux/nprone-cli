@@ -32,6 +32,13 @@ Make sure you have the latest stable [node.js](https://nodejs.org/en/) installed
 npm install -g npr-one
 ```
 
+After Installing npr-one, navigate to it and replace the files that were changes in this fork at this time those files are:
+
+```
+index.js
+lib\ui.js
+```
+
 ## Usage
 
 Sign into the [NPR Dev Console](http://dev.npr.org/), create a new app, and use your App ID & Secret to authorize the CLI. The audio player will save your authorization and begin playing.
