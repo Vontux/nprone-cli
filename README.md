@@ -1,6 +1,9 @@
-# NPR One CLI
+# NPR One CLI for the NTC CHIP
 
-This is a simple command line based NPR One client for OS X and Linux. A full tutorial with setup instructions can be found [in the Adafruit Learning System](https://learn.adafruit.com/raspberry-pi-zero-npr-one-radio).
+This is a simple command line based NPR One client for OS X and Linux. A tutorial with setup instructions can be found [in the Adafruit Learning System](https://learn.adafruit.com/raspberry-pi-zero-npr-one-radio), not everything applies this fork does not include the code to interact with the capacitive touch as inclusion of that code would not allow the original Adafruit version to run on the NTC CHIP the target device for this fork. The MAC OSX instructions are left intact as it is likely to work fine on any device that the Adafruit original version does.
+
+## Interface
+This version has been tweaked to work with a 10 key numeric pad and has been tested on the NTC CHIP.
 
 ## Installation
 
@@ -62,12 +65,12 @@ $ npr-one
 ### Keyboard Controls
 
 ```
-space   play/pause
+Return / Enter   play/pause
 ↑       volume up
 ↓       volume down
 ←       rewind 15 seconds
 →       skip to the next story
-i       mark as interesting
+i       mark as interesting (only if you have a full keyboard attached, there was an issue with keypress library used that does not accept input from numeric keys or any other key it consideres 'undefined'.
 ```
 
 ## License
