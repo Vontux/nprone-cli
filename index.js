@@ -43,8 +43,6 @@ npr.one
    .then(() => {
 
      const ui = new UI({
-       touchThreshold: process.env.MPR121_TOUCH,
-       releaseThreshold: process.env.MPR121_RELEASE
      });
 
      ui.on('skip', player.skip.bind(player));
