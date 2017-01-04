@@ -3,7 +3,7 @@
 This is a simple command line based NPR One client for OS X and Linux. A tutorial with setup instructions can be found [in the Adafruit Learning System](https://learn.adafruit.com/raspberry-pi-zero-npr-one-radio), not everything applies this fork does not include the code to interact with the capacitive touch as inclusion of that code would not allow the original Adafruit version to run on the NTC CHIP the target device for this fork. The MAC OSX instructions are left intact as it is likely to work fine on any device that the Adafruit original version does.
 
 ## Interface
-This version has been tweaked to work with a 10 key numeric pad and has been tested on the NTC CHIP.
+This version has been tweaked to work with a 10 key numeric pad with numlock turned off though any standard USB keyboard should work as long as all keys kepresses are expected from are present. This fork this has been tested on the NTC CHIP running the 4.4.13-ntc-mlc kernel.
 
 ## Installation
 
@@ -32,7 +32,7 @@ Make sure you have the latest stable [node.js](https://nodejs.org/en/) installed
 npm install -g npr-one
 ```
 
-After Installing npr-one, navigate to it and replace the files that were changes in this fork at this time those files are:
+After Installing npr-one, navigate to it and replace the files that were changed in this fork at this time those files are:
 
 ```
 index.js
